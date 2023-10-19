@@ -45,6 +45,12 @@ function CloudImagesPage({ pageContext: { locale: language } }) {
         Header: `${translate('headings.deploy')}`,
         accessor: 'deploylink',
       },
+      {
+        Header: `LVM`,
+        accessor: 'lvm',
+        Filter: SelectColumnFilter,
+        filter: 'includes',
+      },
     ],
     []
   );
